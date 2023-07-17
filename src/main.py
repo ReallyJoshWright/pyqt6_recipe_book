@@ -7,7 +7,7 @@ from PyQt6 import QtSql
 SRC_DIR = os.path.dirname(os.path.abspath(__file__))
 PARENT_DIR = os.path.abspath(os.path.join(SRC_DIR, os.pardir))
 FORMS_DIR = os.path.join(PARENT_DIR, "forms")
-CONFIG_DIR = os.path.join(PARENT_DIR, ".config")
+CONFIG_DIR = os.path.join(PARENT_DIR, "config")
 
 
 class MainWindow(QtWidgets.QMainWindow):
