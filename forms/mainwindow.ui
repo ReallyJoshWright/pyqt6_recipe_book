@@ -31,7 +31,20 @@
        </widget>
       </item>
       <item>
-       <widget class="QTableView" name="mainViewTV"/>
+       <widget class="QTableView" name="mainViewTV">
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+       </widget>
       </item>
      </layout>
     </item>
@@ -54,7 +67,17 @@
     <addaction name="removeRecipeAction"/>
     <addaction name="quitAction"/>
    </widget>
+   <widget class="QMenu" name="menuSearch">
+    <property name="title">
+     <string>Search</string>
+    </property>
+    <addaction name="searchByNameAction"/>
+    <addaction name="searchByIngredAction"/>
+    <addaction name="searchByDateAction"/>
+    <addaction name="searchByAllAction"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuSearch"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="addRecipeAction">
@@ -70,6 +93,26 @@
   <action name="quitAction">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="searchByNameAction">
+   <property name="text">
+    <string>Search by Name</string>
+   </property>
+  </action>
+  <action name="searchByIngredAction">
+   <property name="text">
+    <string>Search by Ingredients</string>
+   </property>
+  </action>
+  <action name="searchByDateAction">
+   <property name="text">
+    <string>Search by Date</string>
+   </property>
+  </action>
+  <action name="searchByAllAction">
+   <property name="text">
+    <string>Search by All</string>
    </property>
   </action>
  </widget>
