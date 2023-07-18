@@ -6,6 +6,7 @@ to add, remove, and view recipes with ease.
 ## Instructions
 - Clone the repo
 - Create a config.ini in the config directory
+- Use config/recipe.sql to create a database table
 - Run: python main.py
 
 ## Example config.ini
