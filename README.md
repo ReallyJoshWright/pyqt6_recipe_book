@@ -9,12 +9,14 @@ to add, remove, and view recipes with ease.
 - Run: python main.py
 
 ## Example config.ini
+~~~
 [postgresql]
 host = your_host
 user = your_username
 db = your_db_name
 pass = your_password
 port = 5432
+~~~
 
 ## Coming Features
 - An edit option while viewing recipes
