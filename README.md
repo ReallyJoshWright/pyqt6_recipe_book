@@ -3,6 +3,12 @@
 A recipe book made using PyQt6 that uses postgresql database. It has options 
 to add, remove, and view recipes with ease.
 
+## Recipe List Screen
+![Recipe List Screen](./images/recipe_list.png)
+
+## Recipe Screen
+![Recipe Screen](./images/recipe.png)
+
 ## Instructions
 - Clone the repo
 - Create a config.ini in the config directory

@@ -31,7 +31,7 @@ class AddRecipe(QtWidgets.QDialog):
             return
         name = self.nameLE.text()
         ingredients = self.ingredientsTE.toHtml()
-        instructions = self.ingredientsTE.toHtml()
+        instructions = self.instructionsTE.toHtml()
         query_str = f"INSERT INTO recipe (name, date, ingredients, \
                 instructions, created_at, updated_at) VALUES ($${name}$$, \
                 now(), $${ingredients}$$, $${instructions}$$, now(), now())"
